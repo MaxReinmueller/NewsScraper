@@ -13,6 +13,9 @@ var app = express();
 // set up express router
 var router = express.Router();
 
+// require the routes file
+require("./config/routes")(router);
+
 // set up the static directory
 app.use(express.static(__dirname + "/public"));
 
@@ -25,7 +28,7 @@ app.set("view engine", "handlebars");
 // use bodyParser
 app.use(bodyParser.urlencoded({
     extended: false
-}))
+}));
 
 // make requests go through middleware
 app.use(router);
