@@ -9,6 +9,7 @@ module.exports = {
   // Create
   fetch: function (cb) {
     scrape(function (data) {
+      console.log('fetch', data)
       var articles = data;
       for (i = 0; i < articles.length; i++) {
         articles[i].date = makeDate();

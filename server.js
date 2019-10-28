@@ -5,7 +5,7 @@ var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 
 // set up port
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3002;
 
 // initiate express
 var app = express();

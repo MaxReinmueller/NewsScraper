@@ -6,12 +6,12 @@ var Schema = mongoose.Schema;
 
 // create a new schema
 var headlineSchema = new Schema({
-    headline: {
+    title: {
         type: String,
         required: true,
         unique: true
     },
-    summary: {
+    link: {
         type: String,
         required: true
     },
